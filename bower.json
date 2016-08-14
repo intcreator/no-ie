@@ -1,10 +1,16 @@
 {
-  "name": "intcreator",
-  "description": "A Polymer based site to demonstrate Brandon&#39;s web dev skills",
-  "main": "index.html",
-  "dependencies": {
-    "polymer": "Polymer/polymer#^1.4.0",
-    "iron-icons": "PolymerElements/iron-icons#^1.1.3"
+  "name": "no-ie",
+  "description": "A simple polymer element that encourages the user to use a modern browser.",
+  "main": "no-ie.html",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/intcreator/no-ie.git"
   },
-  "devDependencies": {}
+  "homepage": "https://github.com/intcreator/no-ie",
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.4.0"
+  },
+  "devDependencies": {
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
+  }
 }

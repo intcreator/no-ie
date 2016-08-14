@@ -4,7 +4,7 @@
 
 ###What this element will do
 
-This element will be invisibile unless Internet Explorer is [detected by a unique feature](http://stackoverflow.com/questions/9847580/how-to-detect-safari-chrome-ie-firefox-and-opera-browser#answer-9851769), upon which this element will appear and offer that the user download Google Chrome or Mozilla Firefox
+This element will be invisible unless Internet Explorer is [detected by a unique feature](http://stackoverflow.com/questions/9847580/how-to-detect-safari-chrome-ie-firefox-and-opera-browser#answer-9851769), upon which this element will appear and offer that the user download Google Chrome or Mozilla Firefox
 
 ###Preview
 
