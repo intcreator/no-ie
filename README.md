@@ -1,6 +1,14 @@
 # \<no-ie\>
 
-##Persuades the user to upgrade their browser in the most well-designed way possible.
+##A simple polymer element that encourages the user to use a modern browser.
+
+###Installation
+
+You can install this element using Bower like other Polymer elements.  Assuming your project is set up using the Bower standard, run this command:
+
+    bower install --save intcreator/no-ie
+    
+This element and its dependencies will be downloaded and saved to your projects `bower_components` folder.
 
 ###What this element will do
 
