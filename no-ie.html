@@ -8,7 +8,8 @@
         height: 100vh;
         width: 100vw;
         margin: 0;
-        background: white;
+        background: #eee;
+        color: #111;
         bottom: 0;
         left: 0;
         position: fixed;
@@ -21,14 +22,17 @@
         font-weight: 300;
         font-family: Helvetica, sans-serif;
         visibility: hidden;
-      }
-
-      h1 {
-        font-weight: 200;
+        overflow: auto;
+        z-index: 99999;
       }
 
       :host > * + * {
         margin-top: 30px;
+      }
+
+      :host > * {
+        margin-left: 100px;
+        margin-right: 100px;
       }
 
       a {
@@ -40,6 +44,7 @@
         width: 100%;
         max-width: 500px;
         color: inherit;
+        flex-shrink: 0;
       }
 
       a div {
@@ -50,6 +55,14 @@
         font-size: .7em;
       }
 
+      a:visited {
+        color: inherit;
+      }
+
+      a:hover {
+        text-decoration: none;
+      }
+
       a img {
         height: 100px;
       }
@@ -58,16 +71,27 @@
         background: #3692fc;
       }
 
+      a span:hover {
+        text-decoration: underline;
+      }
+
       a > * + * {
         margin-left: 30px;
       }
 
+      @media (max-width: 768px) {
+        :host > * {
+          margin-left: 20px;
+          margin-right: 20px;
+        }
+      }
+
     </style>
 
-    <h1>Using Internet Explorer may negatively affect your browsing experience.</h1>
-    <h1>Please consider using one of the following browsers instead of Internet Explorer:</h1>
-    <a href="https://www.google.com/chrome/browser/desktop/index.html"><img src="chrome-logo.png" />Chrome<div>Download</div></a>
-    <a href="https://www.mozilla.org/en-US/firefox/new/"><img src="firefox-logo.png" />Firefox<div>Download</div></a>
+    <h2>Using Internet Explorer may negatively affect your browsing experience.</h2>
+    <h2>Please consider using one of the following browsers instead of Internet Explorer:</h2>
+    <a href="https://www.google.com/chrome/browser/desktop/index.html"><img src="chrome-logo.png" /><span>Chrome</span><div>Download</div></a>
+    <a href="https://www.mozilla.org/en-US/firefox/new/"><img src="firefox-logo.png" /><span>Firefox</span><div>Download</div></a>
 
   </template>
 
