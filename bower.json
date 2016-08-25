@@ -9,8 +9,5 @@
   "homepage": "https://github.com/intcreator/no-ie",
   "dependencies": {
     "polymer": "Polymer/polymer#^1.4.0"
-  },
-  "devDependencies": {
-    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
   }
 }
