@@ -98,7 +98,13 @@
     Polymer({
       is: 'no-ie',
       ready: function() {
-        if(!!document.documentMode) this.style.visibility = "visible";
+        // detect IE by feature
+        if(!!document.documentMode) {
+          // show this element
+          this.style.visibility = "visible";
+          // stop background scrolling
+          document.querySelector('body').style.overflow = "hidden";
+        }
       }
     });
   </script>
