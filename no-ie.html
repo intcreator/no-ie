@@ -3,35 +3,27 @@
 <dom-module id="no-ie">
   <template>
     <style>
+
       :host {
-        height: 100vh;
-        width: 100vw;
+        height: 100%;
+        width: 100%;
         margin: 0;
         background: #eee;
         color: #111;
-        bottom: 0;
-        left: 0;
         position: fixed;
-        right: 0;
-        top: 0;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
         font-weight: 300;
         font-family: Helvetica, sans-serif;
         visibility: hidden;
         overflow: auto;
-        z-index: 99999;
+        z-index: 999999;
       }
 
-      :host > * + * {
+			#container {
+				padding: 100px;
+			}
+
+      #container > * + * {
         margin-top: 30px;
-      }
-
-      :host > * {
-        margin-left: 100px;
-        margin-right: 100px;
       }
 
       a {
@@ -87,10 +79,12 @@
 
     </style>
 
-    <h2>Using Internet Explorer may negatively affect your browsing experience.</h2>
-    <h2>Please consider using one of the following browsers instead of Internet Explorer:</h2>
-    <a href="https://www.google.com/chrome/browser/desktop/index.html"><img src="chrome-logo.png" /><span>Chrome</span><div>Download</div></a>
-    <a href="https://www.mozilla.org/en-US/firefox/new/"><img src="firefox-logo.png" /><span>Firefox</span><div>Download</div></a>
+		<div id="container">
+			<h2>Using Internet Explorer may negatively affect your browsing experience.</h2>
+			<h2>Please consider using one of the following browsers instead of Internet Explorer:</h2>
+			<a href="https://www.google.com/chrome/browser/desktop/index.html"><img src="chrome-logo.png" /><span>Chrome</span><div>Download</div></a>
+			<a href="https://www.mozilla.org/en-US/firefox/new/"><img src="firefox-logo.png" /><span>Firefox</span><div>Download</div></a>
+		</div>
 
   </template>
 
